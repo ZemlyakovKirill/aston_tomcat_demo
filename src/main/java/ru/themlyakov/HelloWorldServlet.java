@@ -13,7 +13,7 @@ public class HelloWorldServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
         resp.setStatus(200);
         try(PrintWriter writer = resp.getWriter()) {
-            writer.write("Hello world test 2");
+            writer.write("Hello world test 3");
         } catch (IOException e){
             resp.setStatus(500);
         }
